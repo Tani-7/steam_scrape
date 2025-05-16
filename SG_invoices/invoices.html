@@ -33,9 +33,61 @@
         line-height: 45px;
         color: lightslategrey;
     }
+
+    .invoice-box table tr.information table td {
+        padding-bottom: 40px;
+    }
     .invoice-box table tr.heading td {
         background-color: aliceblue;
         border-bottom: 1px solid #ddd;
         font-weight: bold;
     }
+    .invoice-box table tr.details td {
+        padding-bottom: 20px;
+    }
+    .invoice-box table tr.items td {
+        border-bottom: 1px solid #eee;
+    }
+
+    .invoice-box table tr.item.last td {
+        border-bottom: none;
+    }
+    .invoice-box table tr.total td:nth-child(2) {
+        border-top: 2px solid #eee;
+        font-weight: bold;
+    }
+    @media only screen and (max-width: 600px) {
+        .invoice-box table tr.top table td {
+            width: 100%;
+            display: block;
+            text-align: center;
+        }
+        .invoice-box table tr.information table td {
+            width: 100%;
+            display: block;
+            text-align: center;
+        }
+    }
+    div.divfooter {
+        position: fixed;
+        height: 30px;
+        background-color: lavender;
+        bottom: 0;
+        width: 100%;
+        left: 0;
+    }
+
+    /** RTL **/
+    .rtl {
+        direction: rtl;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .rtl table {
+        text-align: right;
+    }
+    .rtl table tr td:nth-child(2) {
+        text-align: left;
+    }
 </style>
+
+<head></head>
